@@ -50,3 +50,9 @@ __all__ = [
     "PointCloudFromSegmentationConfig",
     "depth_to_point_cloud",
 ]
+
+from rai.tools.ros2.manipulation.custom import (
+    GetObjectPositionsTool as _RaiCoreGetObjectPositionsTool,
+)
+
+_RaiCoreGetObjectPositionsTool.model_rebuild()
